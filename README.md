@@ -22,7 +22,7 @@ pretendo futuramente colocar:
 -aumento de velocidade.
 
 
-#UPDATE V2
+# UPDATE V2
 update versão 2
 Melhorado:
 -o "centro" das peças, mais intuitivo quando gira;
