@@ -1,97 +1,68 @@
 <html>
     <head>
-        <style>
-            *{
-                font-family: Verdana;
-            }
-            body{
-                margin: 0px;
-            }
-            #tela{
-                background-color: rgb(0, 0, 0);
-                width: 300px;
-                height: 540px;
-                float: left;
-                margin-right: 10px;
-            }
-            .quad1{ /*PAU*/
-                background-color: cyan;
-                width: 30px;
-                height: 30px;
-                position: absolute;
-                border: 0px;
-                margin: 0px;
-                padding: 0px;
-            }
-            .quad2{ /*L*/
-                background-color: orange;
-                width: 30px;
-                height: 30px;
-                position: absolute;
-                border: 0px;
-                margin: 0px;
-                padding: 0px;
-            }
-            .quad3{ /*ESCADA*/
-                background-color: rgb(137, 218, 16);
-                width: 30px;
-                height: 30px;
-                position: absolute;
-                border: 0px;
-                margin: 0px;
-                padding: 0px;
-            }
-            .quad4{ /*QUADRADO*/
-                background-color: rgb(241, 241, 0);
-                width: 30px;
-                height: 30px;
-                position: absolute;
-                border: 0px;
-                margin: 0px;
-                padding: 0px;
-            }
-            .quad5{ /*T*/
-                background-color: purple;
-                width: 30px;
-                height: 30px;
-                position: absolute;
-                border: 0px;
-                margin: 0px;
-                padding: 0px;
-            }
-            .quad6{
-                background-color: rgb(139,69,19);
-                width: 30px;
-                height: 30px;
-                float: left;
-            }
-            #alerta{
-                color: greenyellow;
-                position: absolute;
-                width: 630px;
-                top:210px;
-                text-align: center;
-            }
-        </style>
-
+        <link rel="stylesheet" href="style/estilo.css" />
         <title>DIV Tetris by dankrutov</title>
     </head>
     <body lang="pt-BR" style="background-color: grey">
         <div id="tela">
             
         </div>
-        <br>
-        <button onclick="rotacionar()">Girar</button>
-        <button id="btnPause" onclick="pausar()">Pausar</button>
-        
+        <div id="container">
+            <button onclick="rotacionar()">Girar</button>
+            <button id="btnGuarda" onclick="guardaEretira();">Guardar/Retirar</button>
+            <button id="btnPause" onclick="pausar()">Pausar</button><br>
+            
+            <div class="coluna">
+                <label>Pontuação Atual:</label><br>
+                <input type="text" value="0" id="inputPontos" disabled >
+            </div>
+            <div class="coluna">
+                <label>Pontuação Máxima:</label><br>
+                <input type="text" value="0" id="inputPontosMax" disabled >
+            </div>
+
+            <figure>
+                <figcaption>Próxima Peça</figcaption>
+                <div id="proxPeca">
+                </div>
+            </figure>
+            <figure>
+                <figcaption>Peça Guardada</figcaption>
+                <div id="pecaGuardada">
+                </div>
+            </figure>
+
+            <div class="coluna">
+                <label><b>Opções de acessibilidade:</b></label>
+            </div>
+            <div class="coluna" title="Habilita linha verticais e horizontais">
+                <input onclick="carregarGrid();" id="checkGrid" type="checkbox">
+                <label>Habilitar grids</label>
+            </div>
+            <div class="coluna">
+                <input onclick="resetPontuacao();" id="checkReset" type="checkbox">
+                <label>Reiniciar pontuação máxima</label>
+            </div>
+            <!--
+            <div class="coluna" title="Habilita uma versão futura da peça que mostra sua posição final">
+                <input id="checkGhost" type="checkbox">
+                <label>Habilitar ghost</label>
+            </div>
+            -->
+            
+            
+        </div>
+
         <ul>
             <label>Controles:</label>
-            <li><b>Seta para cima/Tecla "W":</b> Descer peça instantaneamente</li>
-            <li><b>Seta para baixo/Tecla "S":</b> Descer peça rapidamente</li>
-            <li><b>Seta esquerda/Tecla "A":</b> Mover peça para esquerda</li>
-            <li><b>Seta direita/Tecla "D":</b> Mover peça para direita</li>
-            <li><b>Tecla "R":</b> Girar peça</li>
+            <li><b>Seta para cima/Tecla "W":</b> Descer instantaneamente</li>
+            <li><b>Seta para baixo/Tecla "S":</b> Descer rapidamente</li>
+            <li><b>Seta esquerda/Tecla "A":</b> Mover para esquerda</li>
+            <li><b>Seta direita/Tecla "D":</b> Mover para direita</li>
+            <li><b>Tecla "R":</b> Girar</li>
+            <li><b>Tecla "T":</b> Guardar</li>
         </ul>  
+        
         <script type="text/javascript" src="script/jquery-3.6.1.js"></script>
         <script type="text/javascript" src="script/quadrado4.js"></script>
     </body>

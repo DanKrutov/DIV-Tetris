@@ -1,0 +1,148 @@
+*{
+    font-family: Verdana;
+}
+body{
+    margin: 0px;
+}
+#tela{
+    background-color: rgb(0, 0, 0);
+    width: 300px;
+    height: 540px;
+    float: left;
+}
+#container{
+    width: 400px;
+    height: 540px;
+    float: left;
+    margin-top: 0px;
+    padding: 10px;
+    top: 0px;
+    box-sizing: border-box;
+}
+.quad1{ /*PAU*/
+    background-color: cyan;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+.quad2{ /*L*/
+    background-color: orange;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+.quad3{ /*ESCADA*/
+    background-color: rgb(137, 218, 16);
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+.quad4{ /*QUADRADO*/
+    background-color: rgb(241, 241, 0);
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+.quad5{ /*T*/
+    background-color: purple;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+.quad6{ /*ESCADA INVERTIDA*/
+    background-color: blue;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+.quad7{ /*LETRA L INVERTIDA*/
+    background-color: green;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+.grid{
+    box-sizing: border-box;
+    background-color: black;
+    border-color: grey;
+    border-style: dashed;
+    border-width: 1px;
+    width: 30px;
+    height: 30px;
+    float: left;
+}
+#alerta{
+    color: greenyellow;
+    position: absolute;
+    width: 630px;
+    top:210px;
+    text-align: center;
+}
+img {
+    width: 175px;
+    height: 175px;
+    
+}
+figcaption {
+    background-color: black;
+    color: #fff;
+    width: 175px;
+    padding-left: 5px;
+    box-sizing: border-box;
+}
+figure {
+    width: 175px;
+    height: 175px;
+    float: left;
+    margin-left: 0px;
+    margin-right: 10px;
+    margin-bottom: 0px;
+    background-color: #222;
+}
+input{
+    background-color: #222;
+    color: white;
+    border-style: none;
+    padding: 2px 5px;
+    font-size:medium;
+}
+button{
+    padding: 5px 15px;
+    background-color: #222;
+    border-style: none;
+    color: white;
+    cursor: pointer;
+}
+button:active{
+    background-color:white;
+    color: black;
+}
+button:disabled,button[disabled]{
+    background-color: red;
+}
+.coluna{
+    width: 100%;
+    float: left;
+    margin-top: 16px;
+}
