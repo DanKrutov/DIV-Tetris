@@ -26,6 +26,8 @@ pretendo futuramente colocar:
 
 
 Melhorado:
+
+
 -o "centro" das peças, mais intuitivo quando gira;
 
 -interface (quase inexistente antes);
