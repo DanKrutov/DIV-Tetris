@@ -27,7 +27,6 @@ pretendo futuramente colocar:
 
 Melhorado:
 
-
 -o "centro" das peças, mais intuitivo quando gira;
 
 -interface (quase inexistente antes);
@@ -36,6 +35,7 @@ Melhorado:
 
 
 Adicionado:
+
 -peças faltantes (L invertido, escada invertida);
 
 -sistema pra guardar e substituir peças;
