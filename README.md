@@ -20,3 +20,25 @@ pretendo futuramente colocar:
 -possiblidade de guardar uma peça por vez;
 
 -aumento de velocidade.
+
+
+#UPDATE V2
+update versão 2
+Melhorado:
+-o "centro" das peças, mais intuitivo quando gira;
+
+-interface (quase inexistente antes);
+
+-organização dos arquivos e fluxo do código.
+
+
+Adicionado:
+-peças faltantes (L invertido, escada invertida);
+
+-sistema pra guardar e substituir peças;
+
+-grid opcional para melhorar a noção de orientação;
+
+-sistema de pontuação onde quanto mais fileiras maior a pontuação;
+
+-salvamento e exibição da maior pontuação usando localstorage.
