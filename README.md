@@ -13,11 +13,11 @@ Conta com características mais básicas do tetris incluindo:
 
 pretendo futuramente colocar:
 
--sistema de pontuação;
+-sistema de pontuação; (ADICIONADO NA V2)
 
 -tela mostrando a próxima peça a ser escolhida;
 
--possiblidade de guardar uma peça por vez;
+-possiblidade de guardar uma peça por vez; (ADICIONADO NA V2)
 
 -aumento de velocidade.
 
